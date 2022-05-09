@@ -92,7 +92,6 @@ class BinaryTree
             ArrayList<Integer> al = entry.getValue();
             for (Integer i : al)
                 System.out.print(i + " ");
-            System.out.println();
         }
     }
 
