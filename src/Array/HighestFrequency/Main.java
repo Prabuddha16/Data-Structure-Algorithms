@@ -1,12 +1,12 @@
-package Array;
+package Array.HighestFrequency;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Scanner;
-import java.util.*;
 
 public class Main {
+
     // Highest frequency
     public static int highest(int[] arr, int n){
         Map<Integer, Integer> hp =
@@ -42,23 +42,6 @@ public class Main {
         return res;
     }
 
-    //SubArray with Distinct elements
-    public static int subarrays(int[] arr, int n){
-        Set<Integer> s = new HashSet<>();
-        int j = 0, ans = 0;
-        for (int i = 0; i < n; i++)
-        {
-            while (j < n && !s.contains(arr[j]))
-            {
-                s.add(arr[j]);
-                j++;
-            }
-            ans += ((j - i) * (j - i + 1)) / 2;
-            s.remove(arr[i]);
-        }
-        return ans;
-    }
-
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
@@ -66,10 +49,8 @@ public class Main {
         for(int i=0;i<n;i++){
             a[i]=sc.nextInt();
         }
-        int ans,res;
+        int ans;
         ans = highest(a,n);
-        res = subarrays(a,n);
         System.out.println(ans);
-        System.out.println(res);
     }
 }
