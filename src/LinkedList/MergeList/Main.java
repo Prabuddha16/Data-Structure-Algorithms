@@ -1,4 +1,4 @@
-package List.MergeList;
+package LinkedList.MergeList;
 
 import java.util.*;
 public class Main{
