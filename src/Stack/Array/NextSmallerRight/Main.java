@@ -1,4 +1,4 @@
-package Stack.NextSmallerRight;
+package Stack.Array.NextSmallerRight;
 
 import java.util.HashMap;
 import java.util.Stack;

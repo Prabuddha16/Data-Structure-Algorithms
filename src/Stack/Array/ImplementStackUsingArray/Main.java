@@ -1,4 +1,4 @@
-package Stack.ImplementStackUsingArray;
+package Stack.Array.ImplementStackUsingArray;
 
 /* Java program to implement basic stack
 operations */

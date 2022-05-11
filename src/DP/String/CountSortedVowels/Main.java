@@ -16,7 +16,6 @@ class Main{
                 {
                     DP[i][j] = DP[i][j - 1] + 1;
                 }
-
                 else
                 {
                     DP[i][j] = DP[i][j - 1] + DP[i - 1][j];

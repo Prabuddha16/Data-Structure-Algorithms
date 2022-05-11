@@ -1,4 +1,4 @@
-package Stack.NextSmallerLeft;
+package Stack.Array.NextGreaterLeft;
 
 import java.util.Stack;
 
@@ -6,7 +6,7 @@ class Main {
     static void printPrevSmaller(int[] arr, int n) {
         Stack<Integer> S = new Stack<>();
         for (int i = 0; i < n; i++) {
-            while (!S.empty() && S.peek() >= arr[i]) {
+            while (!S.empty() && S.peek() < arr[i]) {
                 S.pop();
             }
             if (S.empty()) {
@@ -20,10 +20,9 @@ class Main {
     }
 
     public static void main(String[] args) {
-        int[] arr = {4,5,2,10,8};
+        int[] arr = {1, 3, 2, 4};
         int n = arr.length;
         printPrevSmaller(arr, n);
     }
 }
-
 

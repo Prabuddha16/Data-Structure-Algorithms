@@ -1,4 +1,4 @@
-package Stack.ReverseString;
+package Stack.String.ReverseString;
 
 import java.util.Scanner;
 import java.util.Stack;

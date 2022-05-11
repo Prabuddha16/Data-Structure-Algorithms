@@ -1,4 +1,4 @@
-package Stack.NextGreaterRight;
+package Stack.Array.NextGreaterRight;
 
 import java.util.Scanner;
 import java.util.Stack;

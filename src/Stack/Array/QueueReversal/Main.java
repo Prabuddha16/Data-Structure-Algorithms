@@ -1,4 +1,4 @@
-package Stack.QueueReversal;
+package Stack.Array.QueueReversal;
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;

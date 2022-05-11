@@ -1,4 +1,4 @@
-package Stack.StockSpan;
+package Stack.Array.StockSpan;
 
 import java.util.Scanner;
 import java.util.Stack;

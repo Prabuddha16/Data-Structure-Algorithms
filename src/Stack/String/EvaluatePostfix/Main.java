@@ -1,4 +1,4 @@
-package Stack.EvaluatePostfix;
+package Stack.String.EvaluatePostfix;
 
 import java.util.Scanner;
 import java.util.Stack;
