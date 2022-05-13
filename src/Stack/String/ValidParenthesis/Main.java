@@ -1,6 +1,8 @@
-package Stack.String.ParenthesisChecker;
+package Stack.String.ValidParenthesis;
 
 //Valid Parenthesis
+//Valid Expression
+//Parenthesis Checker
 
 import java.util.Scanner;
 import java.util.Stack;

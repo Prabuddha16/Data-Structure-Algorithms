@@ -1,4 +1,4 @@
-package Stack.SortStack;
+package Stack.Array.SortStack;
 
 import java.util.Stack;
 

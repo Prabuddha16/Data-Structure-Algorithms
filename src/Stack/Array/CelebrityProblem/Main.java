@@ -1,4 +1,4 @@
-package Stack.CelebrityProblem;
+package Stack.Array.CelebrityProblem;
 
 
 import java.io.*;

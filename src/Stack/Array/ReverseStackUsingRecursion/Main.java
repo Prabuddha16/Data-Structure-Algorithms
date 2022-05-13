@@ -1,4 +1,4 @@
-package Stack.ReverseStackUsingRecursion;
+package Stack.Array.ReverseStackUsingRecursion;
 
 import java.util.ArrayList;
 import java.util.Stack;
