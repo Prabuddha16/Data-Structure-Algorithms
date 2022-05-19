@@ -1,4 +1,4 @@
-package Array.HighestFrequency;
+package Hashing.HighestFrequency;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -1,4 +1,4 @@
-package Array.ElementOccurKTimes;
+package Hashing.ElementOccurKTimes;
 
 import java.util.HashMap;
 

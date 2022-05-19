@@ -1,4 +1,4 @@
-package Array.SubArrayDistinct;
+package Hashing.SubArrayDistinct;
 
 import java.util.HashSet;
 import java.util.Scanner;
