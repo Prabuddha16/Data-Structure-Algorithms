@@ -1,10 +1,13 @@
-package Mathematics.IntersectionOf2Array;
+package Hashing.Array.IntersectionOf2Array;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.List;
 
 public class Main {
+
+    //pattern-1
     public int[] intersection(int[] nums1, int[] nums2) {
         HashSet<Integer> map = new HashSet<>();
         ArrayList<Integer> list = new ArrayList<>();
@@ -19,14 +22,15 @@ public class Main {
                 map.remove(num);
             }
         }
-//list of intersection elements
-        int[] output = new int[list.size()];
+    //list of intersection elements
+        int[] arr = new int[list.size()];
         for (int i = 0; i < list.size(); i++) {
-            output[i] = list.get(i);
+            arr[i] = list.get(i);
         }
-        return output;
+        return arr;
     }
 
+    //pattern-2
     public static int NumberofElementsInIntersection(int a[], int b[], int n, int m) {
         int count = 0 ;
         HashMap<Integer, Integer> map = new HashMap<>();
@@ -43,4 +47,22 @@ public class Main {
         }
         return count;
     }
+
+    //pattern-3
+    public int[] intersectII(int[] nums1, int[] nums2) {
+        int[] arr = new int[1001];
+        List<Integer> list = new ArrayList<>();
+        for (int num : nums1)
+            arr[num]++;
+        for (int num : nums2)
+            if (arr[num] > 0) {
+                list.add(num);
+                arr[num]--;
+            }
+        int[] ans = new int[list.size()];
+        for (int i = 0; i < list.size(); i++)
+            ans[i] = list.get(i);
+        return ans;
+    }
+
 }

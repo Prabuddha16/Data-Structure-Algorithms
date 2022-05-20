@@ -30,9 +30,28 @@ public class Main {
         return -1;
     }
 
+    //Moore's Sorting Algo
+    public int majorityElement(int[] nums) {
+        int ans=0;
+        int c=1;
+        for(int i=1;i<nums.length;i++){
+            if(nums[i]==nums[ans]){
+                c++;
+            }else{
+                c--;
+            }
+            if(c==0){
+                ans=i;
+                c=1;
+            }
+        }
+        return nums[ans];
+    }
+
     void main(String[] args){
         int[] a = {3,1,3,3,2};
         int n = a.length;
         majorityElement(a,n);
+        majorityElement(a);
     }
 }

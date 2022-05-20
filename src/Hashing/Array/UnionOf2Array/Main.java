@@ -1,4 +1,4 @@
-package Mathematics.UnionOf2Array;
+package Hashing.Array.UnionOf2Array;
 //t=min(m,n) s=min(n,m)
 import java.util.*;
 class Main {

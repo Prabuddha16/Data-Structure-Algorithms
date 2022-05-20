@@ -1,4 +1,4 @@
-package Hashing.NextGreaterWithFrequency;
+package Hashing.Array.NextGreaterWithFrequency;
 
 import java.util.HashMap;
 import java.util.Stack;
