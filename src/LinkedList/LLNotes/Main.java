@@ -1,4 +1,4 @@
-package LinkedList.OddEven;
+package LinkedList.LLNotes;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -212,7 +212,6 @@ public class Main {
                 slow = slow.next;
                 fast = fast.next;
             }
-
             return slow.data;
         }
 
@@ -341,12 +340,7 @@ public class Main {
             int d = Integer.parseInt(values1[i]);
             l1.addLast(d);
         }
-
-
-
         l1.oddEven();
-
-
         l1.display();
     }
 }
