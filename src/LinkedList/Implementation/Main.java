@@ -18,7 +18,7 @@ class MyLinkedList {
         head=null;
     }
 
-
+//find Node at given index
     public int get(int index) {
         if(head==null) return -1;
         if(index==0) return head.val;
@@ -33,7 +33,7 @@ class MyLinkedList {
         return -1;
     }
 
-
+//insert node at top
     public void addAtHead(int val) {
         Node node = new Node(val);
         if(head==null) {
@@ -45,7 +45,7 @@ class MyLinkedList {
         }
     }
 
-
+//insert node at last
     public void addAtTail(int val) {
         Node node = new Node(val);
         if(head==null) {
@@ -60,7 +60,7 @@ class MyLinkedList {
         }
     }
 
-
+//insert at given position
     public void addAtIndex(int index, int val) {
         if(index==0) {
             addAtHead(val);
@@ -79,7 +79,7 @@ class MyLinkedList {
         }
     }
 
-
+//delete at given index
     public void deleteAtIndex(int index) {
         if(head==null) return;
         if(index==0){
@@ -97,6 +97,7 @@ class MyLinkedList {
         }
     }
 
+    //traversal
     public void display() {
         Node current = head;
         while(current!=null) {

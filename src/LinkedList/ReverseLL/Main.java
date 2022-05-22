@@ -1,14 +1,5 @@
 package LinkedList.ReverseLL;
 
-public class Node{
-    public int data;
-    public Node next;
-    Node(int d){
-        data=d;
-        next=null;
-    }
-}
-
 public class Main {
     Node reverseList(Node head)
     {
