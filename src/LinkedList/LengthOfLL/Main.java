@@ -4,7 +4,7 @@ import LinkedList.ReverseLL.Node;
 
 public class Main {
 
-    //Recursion
+    //Array.Recursion
     public static int getCount(Node head)
     {
         if(head==null)
