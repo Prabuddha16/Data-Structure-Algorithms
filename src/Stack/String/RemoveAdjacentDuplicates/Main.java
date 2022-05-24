@@ -1,5 +1,8 @@
-package String.RemoveDuplicates;
-
+package Stack.String.RemoveAdjacentDuplicates;
+/*
+Input: s = "abbaca"
+Output: "ca"
+ */
 import java.util.Scanner;
 import java.util.Stack;
 

@@ -11,7 +11,7 @@ class Main
         while(T>0)
         {
             int q = sc.nextInt();
-            GfG g = new GfG();
+            Solution g = new Solution();
             while(q>0)
             {
                 int qt = sc.nextInt();
@@ -41,7 +41,7 @@ class Main
 }
 
 
-class GfG
+class Solution
 {
     Stack<Integer> s = new Stack<>();
     Stack<Integer> min = new Stack<>();

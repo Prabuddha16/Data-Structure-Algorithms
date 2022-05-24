@@ -1,8 +1,10 @@
 package Stack.String.ValidParenthesis;
 
 //Valid Parenthesis
+//Balanced Parenthesis
 //Valid Expression
 //Parenthesis Checker
+//t=o(n) s=o(n)
 
 import java.util.Scanner;
 import java.util.Stack;
