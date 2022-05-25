@@ -10,15 +10,19 @@ class Main {
     public static void dfs(int[][] image, int r, int c, int color, int newColor) {
         if (image[r][c] == color) {
             image[r][c] = newColor;
-            if (r >= 1) dfs(image, r-1, c, color, newColor);
-            if (c >= 1) dfs(image, r, c-1, color, newColor);
-            if (r+1 < image.length) dfs(image, r+1, c, color, newColor);
-            if (c+1 < image[0].length) dfs(image, r, c+1, color, newColor);
+            if (r >= 1)
+                dfs(image, r-1, c, color, newColor);
+            if (c >= 1)
+                dfs(image, r, c-1, color, newColor);
+            if (r+1 < image.length)
+                dfs(image, r+1, c, color, newColor);
+            if (c+1 < image[0].length)
+                dfs(image, r, c+1, color, newColor);
         }
     }
 
     public static void main(String[] args) {
-        int screen[][] = {
+        int[][] screen = {
                 {1, 1, 1, 1, 1, 1, 1, 1},
                 {1, 1, 1, 1, 1, 1, 0, 0},
                 {1, 0, 0, 1, 1, 0, 1, 1},
@@ -29,12 +33,13 @@ class Main {
                 {1, 1, 1, 1, 1, 2, 2, 1},
         };
         int x = 4, y = 4, newC = 3;
-        floodFill(screen, x, y, newC);
+
+        int[][] ans = floodFill(screen, x, y, newC);
 
         System.out.println("Updated screen after call to floodFill: ");
-        for (int i = 0; i < screen.length; i++) {
-            for (int j = 0; j < screen[0].length; j++)
-                System.out.print(screen[i][j] + " ");
+        for (int i = 0; i < ans.length; i++) {
+            for (int j = 0; j < ans[0].length; j++)
+                System.out.print(ans[i][j] + " ");
             System.out.println();
         }
     }
