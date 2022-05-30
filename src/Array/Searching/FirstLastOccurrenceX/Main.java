@@ -1,4 +1,4 @@
-package Searching.FirstLastOccurrenceX;
+package Array.Searching.FirstLastOccurrenceX;
 
 import java.util.ArrayList;
 

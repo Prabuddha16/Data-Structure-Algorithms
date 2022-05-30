@@ -1,4 +1,4 @@
-package Array.Array.KthLargest;
+package Array.PriorityQueue.KthLargestNo;
 
 import java.util.PriorityQueue;
 

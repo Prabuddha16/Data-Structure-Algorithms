@@ -30,7 +30,7 @@ public class Main {
         return -1;
     }
 
-    //Moore's Sorting Algo
+    //Moore's Array.Sorting Algo
     public int majorityElement(int[] nums) {
         int ans=0;
         int c=1;

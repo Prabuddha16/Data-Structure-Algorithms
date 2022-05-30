@@ -1,30 +1,27 @@
 package DP.String.LIS_Subsequence;
 
-import java.io.*;
 import java.util.*;
 
 //Function to find length of longest increasing subsequence.
 //O(nlogn) / O(n)
-
-class Main{
-    public static void main(String[] args) throws IOException {
-        Scanner sc = new Scanner(System.in);
-        int t = sc.nextInt();
-        while(t > 0){
-            int n = sc.nextInt();
-            int[] array = new int[n];
-            for (int i = 0; i < n; ++i)
-            {
-                array[i] = sc.nextInt();
-            }
-            Solution ob = new Solution();
-            System.out.println(ob.longestSubsequence(n,array));
-            t--;
-        }
-    }
-}
-class Solution
+class Main
 {
+    //method-1
+    public int lengthOfLIS(int[] nums) {
+        int[] dp = new int[nums.length];
+        int max = 0;
+        for(int num : nums) {
+            int index = Arrays.binarySearch(dp, 0, max, num);
+            if(index < 0)
+                index = Math.abs(index) - 1;
+            dp[index] = num;
+            if(index == max)
+                ++max;
+        }
+        return max;
+    }
+
+    //method-2
     static int longestSubsequence(int size, int[] a)
     {
         int result = 0;

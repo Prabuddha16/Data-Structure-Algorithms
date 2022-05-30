@@ -1,4 +1,4 @@
-package Array.Array.ExistOrNot;
+package Array.Searching.ExistOrNot;
 
 import java.util.*;
 public class Main {

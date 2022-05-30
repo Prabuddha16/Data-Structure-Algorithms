@@ -1,4 +1,4 @@
-package Array.Array.KthSmallest;
+package Array.PriorityQueue.KthSmallest;
 
 import java.util.Collections;
 import java.util.PriorityQueue;

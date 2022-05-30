@@ -1,4 +1,4 @@
-package Searching.MinElemRotatedSortedArray;
+package Array.Searching.MinElemRotatedSortedArray;
 
 //tc=logn s=logn
 

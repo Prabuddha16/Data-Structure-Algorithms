@@ -1,4 +1,4 @@
-package Sorting.BubbleSort;
+package Array.Sorting.BubbleSort;
 
 import java.util.*;
 class Solution

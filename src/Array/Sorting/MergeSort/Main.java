@@ -1,4 +1,4 @@
-package Sorting.MergeSort;
+package Array.Sorting.MergeSort;
 
 public class Main {
     static long merge(long arr[],long temp[],int left,int mid,int right)
