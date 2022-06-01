@@ -1,4 +1,4 @@
-package Array.Array.ImmediateSmallEleRight;
+package Array.Basic.ImmediateSmallEleRight;
 
 public class Main {
     static void immediateSmaller(int[] arr, int n) {

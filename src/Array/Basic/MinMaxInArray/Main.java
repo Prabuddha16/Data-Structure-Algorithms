@@ -1,4 +1,4 @@
-package Array.Array.MinMaxInArray;
+package Array.Basic.MinMaxInArray;
 
 public class Main {
     class pair

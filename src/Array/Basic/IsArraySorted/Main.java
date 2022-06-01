@@ -1,4 +1,4 @@
-package Array.Array.IsArraySorted;
+package Array.Basic.IsArraySorted;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package Array.Array.CyclicRotateArray;
+package Array.Basic.CyclicRotateArray;
 
 public class Main {
     public void rotate(int[] arr, int n)
