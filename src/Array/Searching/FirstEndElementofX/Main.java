@@ -1,19 +1,14 @@
-package Array.Searching.FirstLastOccurrenceX;
+package Array.Searching.FirstEndElementofX;
 
-import java.util.ArrayList;
-
-class Main
-{
-    ArrayList<Long> find(long[] arr, int n, int x)
-    {
-        ArrayList<Long> a1 = new ArrayList<>();
-        int a = firstOccurrence(arr,n,x);
-        int b  = lastOccurence(arr,n,x);
-        a1.add((long)a);
-        a1.add((long)b);
-        return a1;
+class Solution {
+    public int[] searchRange(int[] arr, int x) {
+        int n = arr.length;
+        int[] ar = new int[]{-1, -1};
+        ar[0] = firstOccurrence(arr,n,x);
+        ar[1] = lastOccurrence(arr,n,x);
+        return ar;
     }
-    public static int  firstOccurrence(long[] arr, int n , int k) {
+    public static int  firstOccurrence(int[] arr, int n , int k) {
         int start = 0;
         int end = n-1;
         int ans = -1;
@@ -31,7 +26,7 @@ class Main
         }
         return ans;
     }
-    public static int lastOccurence(long[] arr, int n , int k) {
+    public static int lastOccurrence(int[] arr, int n , int k) {
         int start = 0;
         int end= n-1;
         int ans = -1;

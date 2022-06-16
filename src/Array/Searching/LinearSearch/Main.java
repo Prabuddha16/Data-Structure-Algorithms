@@ -1,5 +1,7 @@
 package Array.Searching.LinearSearch;
 
+//o(n)
+//o(1)
 public class Main {
 
     static int search(int[] arr, int N, int X)
@@ -9,7 +11,6 @@ public class Main {
                 return i;
             }
         }
-
         return -1;
     }
 

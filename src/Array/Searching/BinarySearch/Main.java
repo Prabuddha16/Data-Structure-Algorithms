@@ -2,7 +2,8 @@ package Array.Searching.BinarySearch;
 
 import java.io.*;
 import java.util.*;
-
+//o(nlogn)
+//o(1)
 public class Main {
     public static void main (String[] args) throws IOException {
         Scanner sc = new Scanner(System.in);
