@@ -1,4 +1,4 @@
-package Array.Array.ShortUnsortedContigArray;
+package Array.Array.ShortUnsortedContigSubArray;
 
 public class Main {
     public int findUnsortedSubarray(int[] nums) {

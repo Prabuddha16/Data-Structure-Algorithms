@@ -29,6 +29,8 @@ class Main {
 }
 
 class Solution{
+
+    //m-1
     public static int doUnion(int[] a, int n, int[] b, int m)
     {
         int min = Math.min(n, m);
@@ -48,5 +50,17 @@ class Solution{
             }
         }
         return set.size();
+    }
+
+    //m-2
+    void union(int a[],int b[]){
+        HashSet<Integer> set = new HashSet<>();
+        for(int i=0;i<a.length;i++){
+            set.add(a[i]);
+        }
+        for(int i=0;i<b.length;i++){
+            set.add(b[i]);
+        }
+        System.out.println(set);
     }
 }

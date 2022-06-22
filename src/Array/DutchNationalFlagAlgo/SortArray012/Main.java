@@ -1,4 +1,4 @@
-package Array.Searching.SortArray012;
+package Array.DutchNationalFlagAlgo.SortArray012;
 
 public class Main {
     public static void sort012(int[] a, int n)
