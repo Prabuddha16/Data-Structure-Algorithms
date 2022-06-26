@@ -11,6 +11,7 @@ public class Main {
         return;
     }
 
+
     public static void main(String[] args) {
         int n = 100;
         printNos(n);
