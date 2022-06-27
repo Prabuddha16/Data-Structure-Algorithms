@@ -5,7 +5,8 @@ import java.util.Stack;
 public class Main {
     public void deleteMid(Stack<Integer> s, int sizeOfStack){
         int middle = sizeOfStack/2;
-        if(s.isEmpty()) return ;
+        if(s.isEmpty())
+            return;
         deleteMiddle( s, middle);
     }
 
@@ -14,7 +15,6 @@ public class Main {
             s.pop();
             return ;
         }
-
         int temp = s.pop();
         deleteMiddle(s, middle-1 );
         s.push(temp);
