@@ -25,6 +25,23 @@ public class Main {
         return b;
     }
 
+    //method-3
+    public static long[] printFibb(int n)
+    {
+        long[] res = new long[n];
+        res[0] = 1;
+        if(n==1){
+            return res;
+        }
+        res[1] = 1;
+        if(n==2){
+            return res;
+        }
+        for(int i=2;i<n;i++){
+            res[i] = res[i-1]+res[i-2];
+        }
+        return res;
+    }
 
     public static void main (String[] args)
     {

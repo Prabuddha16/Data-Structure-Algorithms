@@ -8,14 +8,13 @@ import java.util.Collections;
 import java.util.List;
 
 public class Main {
-    void permutation(String str, String asf, List<String> ans)
+    public static void permutation(String str, String asf, List<String> ans)
     {
         if(str.length()==0)
         {
             ans.add(asf);
             return;
         }
-
 
         for(int i=0;i<str.length();i++)
         {
