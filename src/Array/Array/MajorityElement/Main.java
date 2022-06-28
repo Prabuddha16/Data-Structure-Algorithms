@@ -1,5 +1,5 @@
 package Array.Array.MajorityElement;
-
+//Divide & Conquer
 public class Main {
      /*
      Find the majority element in the array.
