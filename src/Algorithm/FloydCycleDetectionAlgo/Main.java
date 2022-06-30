@@ -1,17 +1,14 @@
-package LinkedList.LoopOrCycle;
+package Algorithm.FloydCycleDetectionAlgo;
 
-class Node{
+class Node
+{
     int data;
     Node next;
-    Node(int d){
-        data =d;
-        next=null;
-    }
+    Node(int d) {data = d; next = null; }
 }
 
-// Floyd's Cycle Detection Algo.
-
-public class Main {
+class Solution {
+    //Function to check if the linked list has a loop.
     public static boolean detectLoop(Node head){
         if(head==null || head.next==null)
             return false;
