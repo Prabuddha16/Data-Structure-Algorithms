@@ -1,4 +1,4 @@
-package Array.Array.MissingNoInArray;
+package Basic.MissingNoInArray;
 
 public class Main {
     static int MissingNumber(int[] array, int n) {
