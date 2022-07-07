@@ -1,4 +1,4 @@
-package DP.Array.ZeoOne_Knapsack;
+package DP.Array.Knapsack_ZeroOne;
 
 public class Main {
     static int knapSack(int W, int[] wt, int[] val, int n)
