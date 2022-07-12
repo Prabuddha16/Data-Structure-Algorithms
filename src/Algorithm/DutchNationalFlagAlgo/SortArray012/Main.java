@@ -1,5 +1,5 @@
 package Algorithm.DutchNationalFlagAlgo.SortArray012;
-
+//o(n)/o(1)
 public class Main {
     public static void sort012(int[] a, int n)
     {

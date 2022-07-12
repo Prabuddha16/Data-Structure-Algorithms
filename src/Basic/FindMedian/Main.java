@@ -7,14 +7,14 @@ public class Main {
     {
         int ans = 0;
         Arrays.sort (v);
-        int mid = v.length;
-        if (mid % 2 != 0)
+        int n = v.length;
+        if (n % 2 != 0)
         {
-            ans = v[mid / 2];
+            ans = v[n / 2];
         }
         else
         {
-            ans = (v[mid / 2] + v [(mid - 1) / 2]) / 2;
+            ans = (v[n / 2] + v [(n - 1) / 2]) / 2;
         }
         return ans;
     }

@@ -1,4 +1,4 @@
-package Sorting.SortColorsTwoPointers;
+package Algorithm.DutchNationalFlagAlgo.SortColorsTwoPointers;
 
 public class Main {
     public void sortColors(int[] nums) {

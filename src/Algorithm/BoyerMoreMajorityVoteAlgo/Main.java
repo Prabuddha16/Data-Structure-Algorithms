@@ -1,5 +1,5 @@
 package Algorithm.BoyerMoreMajorityVoteAlgo;
-
+//o(n) / o(1)
 public class Main {
     public int majorityElement(int[] nums) {
         int ans=0;
