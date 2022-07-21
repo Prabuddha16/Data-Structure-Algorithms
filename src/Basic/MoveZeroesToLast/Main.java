@@ -12,4 +12,11 @@ public class Main {
             }
         }
     }
+
+    public void moveZero(int[] arr){
+        int n=arr.length;
+        int l=0;
+        int h=n-1;
+
+    }
 }

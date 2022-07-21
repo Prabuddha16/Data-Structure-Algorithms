@@ -1,6 +1,7 @@
 package DP.Basic.ClimbingStairs;
 
 public class Main {
+    //o(n)/o(n)
     public int climbStairs(int n) {
         if(n==1)
             return 1;
@@ -14,6 +15,7 @@ public class Main {
         return dp[n-1];
     }
 
+    //o(n)/o(1)
     public int reachNthPoint(int n) {
         n = n + 1;
         if(n ==  1 || n == 2) {
