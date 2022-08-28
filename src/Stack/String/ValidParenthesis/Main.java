@@ -21,9 +21,9 @@ class Main
             String st = sc.next();
             new Solution();
             if(Solution.ispar(st))
-                System.out.println("balanced");
+                System.out.println("true");
             else
-                System.out.println("not balanced");
+                System.out.println("false");
 
         }
     }
