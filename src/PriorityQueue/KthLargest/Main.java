@@ -1,7 +1,7 @@
 package PriorityQueue.KthLargest;
 
 import java.util.*;
-public class Main {
+public class  Main {
     public static void main (String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
@@ -12,7 +12,8 @@ public class Main {
         for(int i = 0; i<n; i++) {
             int a = sc.nextInt();
             pq.add(a);
-            if(pq.size()>k) pq.poll();
+            if(pq.size()>k)
+                pq.poll();
         }
 
         System.out.println(pq.poll());
