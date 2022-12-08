@@ -18,16 +18,12 @@ public class AffineCipher {
         int c=sc.nextInt();
         boolean result=false;
         StringBuilder pt= new StringBuilder();
-        String ct="";
         String pt1="";
         String ptd="";
-        String ct1="";
         String km="";
-        String keym="";
-        String keya="";
         int kmf=0;
         String ka="";
-        int kaf=0;
+        int kaf;
         int f=0;
         ArrayList<Integer> spaces=new ArrayList<>();
         switch (c) {

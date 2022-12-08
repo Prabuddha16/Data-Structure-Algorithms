@@ -1,4 +1,4 @@
-package Crypto.HellmanKey;
+package Crypto.DiffieHellmanKey;
 
 import java.math.BigInteger;
 import java.util.ArrayList;

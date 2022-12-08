@@ -1,23 +1,24 @@
-package Crypto.ElgamalCryptoSystem;
+package Crypto.ElgamalSignatureScheme;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Scanner;
 
-public class Main {
+public class ElgamalSignatureScheme {
     static ArrayList<Integer> primitiveRootList=new ArrayList<>();
     static int power(int x, int y, int p)
     {
         int res = 1;
+
         x = x % p;
         if (x == 0)
-        return 0;
+            return 0;
 
         while (y > 0)
         {
             if ((y & 1) != 0)
-            res = (res * x) % p;
+                res = (res * x) % p;
             y = y >> 1;
             x = (x * x) % p;
         }
@@ -112,6 +113,7 @@ public class Main {
             }
         }
         for(Integer ele:orderOfElement.keySet()){
+
             if(orderOfElement.get(ele)==phi){
                 primitiveRootList.add(ele);
             }
@@ -120,15 +122,38 @@ public class Main {
     }
     static int modInverse(int A, int M)
     {
+
         for (int X = 1; X < M; X++)
             if (((A % M) * (X % M)) % M == 1)
                 return X;
         return 1;
     }
+    static int gcd(int num1,int num2){
+        if(num1<num2){
+            int temp=num1;
+            num1=num2;
+            num2=temp;
+        }
+        int r1=num1;
+        int r2=num2;
+        int q;
+        int r;
+        while(r2>0){
+            q=r1/r2;
+            r=r1-q*r2;
+            r1=r2;
+            r2=r;
+        }
+        return r1;
+    }
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
-        System.out.println("Enter large prime number:-");
+        System.out.println("Enter prime number:-");
         int q=sc.nextInt();
+        while(!isPrime(q)){
+            System.out.println("Enter prime number:-");
+            q= sc.nextInt();
+        }
         primtiveRootTable(q);
         System.out.println("Select any primitive root of q:-");
         int alpha=sc.nextInt();
@@ -137,19 +162,35 @@ public class Main {
         int ya=power(alpha,xa,q);
         System.out.println("Public Key:- "+"{"+q+","+alpha+","+ya+"}");
         System.out.println("Private Key:- "+xa);
-        System.out.println("<--Encryption Started-->");
-        System.out.println("Enter message:-");
-        int m=sc.nextInt();
-        System.out.println("Select Random Integer less than k:-");
+        System.out.println("Enter msg:-");
+        int msg=sc.nextInt();
+
+        List<Integer> listofrandomvalues=new ArrayList<>();
+        for (int i=1;i<=q-1;i++){
+            if(gcd(i,q-1)==1) listofrandomvalues.add(i);
+        }
+        System.out.println("Random Integer List having gcd 1:-");
+        System.out.println(listofrandomvalues);
+        System.out.println("Select random integer k");
         int k=sc.nextInt();
-        int K=power(ya,k,q);
-        int c1=power(alpha,k,q);
-        int c2=K*m%q;
-        System.out.println("Calculated Value of C1:-"+c1);
-        System.out.println("Calaculated Value of C2:-"+c2);
-        System.out.println("<--Decryption-->");
-        int kval=power(c1,xa,q);
-        int plain=((c2%q)*modInverse(K,q))%q;
-        System.out.println("Original Plain Text:-"+plain);
+        int s1=power(alpha,k,q);
+        int kinv=modInverse(k,q-1);
+        int cal=((msg-xa*s1)*kinv)%(q-1);
+        if(cal<0){
+            cal+=(q-1);
+        }
+        System.out.println("Signature S1:-"+s1);
+        System.out.println("Signature S2:-"+cal);
+        System.out.println("Now time for verification:-");
+        int v1=power(alpha,msg,q);
+        System.out.println("Value of v1:-"+v1);
+        int v2=(power(ya,s1,q)*power(s1,cal,q))%q;
+        System.out.println("Value of v2:-"+v2);
+        if(v1==v2){
+            System.out.println("Verified Successfuly:-");
+        }
+        else{
+            System.out.println("Not Verified Successfully:-");
+        }
     }
 }
